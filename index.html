@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<title>Portfolio</title>
+<link href="portfolio.css" rel="stylesheet" type="text/css">
+	
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="swiper-bundle.min.css" rel="stylesheet" type="text/css">
+	<style>
+		
+		
+	</style>
+</head>
+
+<body>
+	<!-----header----->
+	<header>
+		<a href="#" class="logo">Portfo<span>lio</span></a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+		
+		<ul class="navbar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#services">Arbeiten</a></li>
+			<li><a href="#resume">Lebenslauf</a></li>
+			<li><a href="#contact">Kontakt</a></li>
+		</ul>
+	</header>
+	
+	<!-----start home----->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h5>Hallo, ich bin</h5>
+			<h1>Daniel Schimjakin</h1>
+			<h6>Ich bin ein <span>Mediengestalter </span>in Digital und Print</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+			<a href="#" class="btn">Lebenslauf</a>
+		</div>
+		
+		<div class="home-img">
+			<p>Bild von mir</p>
+		</div>
+	</section>
+	
+	<!-----start about----->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="../Portfolio/Logos/rgs.logo.daniel.schimjakin.jpg">
+		</div>
+		
+		<div class="about-text">
+			<h3>Über Mich</h3>
+			<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+			<div class="count">
+				<a href="#"><span>5</span> Erfolgreiche Projekte</a>
+			</div>
+			
+			<div class="main-btn">
+				<a href="#" class="btn">Kontakt</a>
+				<a href="#" class="btn">Anschreiben</a>
+			</div>
+		</div>
+	</section>
+	
+	<!-----start about----->
+	<section class="services" id="services">
+		<div class="center">
+			<h3>Meine Arbeiten</h3>
+		</div>
+		
+		<div class="service-content">
+			
+			<div class="row">
+				<img id="myBtn" class="icon" src="Bilder/Tree.jpg">
+				<h3>Web Development</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+				
+				<div id="myModal" class="modal">
+					<div class="modal-content">
+						<div class="mySwiper">
+							<div class="swiper-wrapper">
+								<div class="main-slider-box">
+									<div class="main-slider-img">
+										<img id="pls" src="Bilder/Tree.jpg">
+										<div class="slider-btns">
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		
+		
+			<div class="row">
+				<i class="bx bx-cast"></i>
+				<h3>Logo Design</h3>
+				<p>Elit, sed do eiusmod tempor et dolore magna aliqua</p>
+			</div>
+
+			<div class="row">
+				<i class="bx bx-cast"></i>
+				<h3>Animationen</h3>
+				<p>Dolore magna aliqua</p>
+			</div>
+
+			<div class="row">
+				<i class="bx bx-cast"></i>
+				<h3>Illustrationen</h3>
+				<p>Incididunt ut labore et dolore magna aliqua</p>
+			</div>
+
+			<div class="row">
+				<i class="bx bx-camera" ></i>
+				<h3>Prdoukt-Entwicklung</h3>
+				<p>Tempor incididunt ut labore et dolore magna aliqua</p>
+			</div>
+
+			<div class="row">
+				<i class="bx bx-line-chart" ></i>
+				<h3>Typografische Arbeiten</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+			</div>
+		</div>
+	</section>
+	
+	<!----- resume ----->
+	
+	<section class="resume" id="resume">
+		<div class="center">
+			<h3>Education u. Experience</h3>
+		</div>
+		
+		<div class="resume-content">
+			<div class="center">
+				<h6>March 2013 - Present</h6>
+				<h4>March 2013 - Present</h4>
+				<p>Lorem ipsun Tempor incididunt ut labore et dolore magna aliqua</p>
+				<h5>University</h5>
+			</div>
+		</div>
+	</section>
+	<div class="slider-btns">
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+			
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 1,
+		  	spaceBetween: 50,
+			
+			pagination: {
+				el: ".swiper-pagination",
+          		clickable: true,
+			},
+		  	autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			navigation: {
+          		nextEl: ".swiper-button-next",
+          		prevEl: ".swiper-button-prev",
+        	},
+		  	
+			breakpoints: {
+          		640: {
+          			slidesPerView: 2,
+          			spaceBetween: 20,
+        		},
+			
+				768: {
+            		slidesPerView: 2,
+            		spaceBetween: 40,
+          		},
+          
+				1024: {
+            		slidesPerView: 3,
+            		spaceBetween: 50,
+          		},
+        	},
+		});
+	</script>
+</body>
+</html>

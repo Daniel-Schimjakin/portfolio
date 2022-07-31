@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>drag and drop</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			padding: 2vw 10vw;
+			background-color:#3B3B3B ;
+		}
+		h1 {
+			margin: 0 0 0 1vw;
+			display: inline;
+			color: white;
+			font-size: 30px;
+			font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+		}
+		h2{
+			display: inline;
+			margin: 0 0 0 31vw;
+			color: white;
+			font-size: 30px;
+			font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+		}
+		section{
+			display: flex;
+		}
+		#a, #b{
+			height: 400px;
+			width: 300vw;
+			margin: 1vw;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: flex-start;
+			background-color: #FFF;
+		}
+		div.element{
+			width: 11.3vw;
+			height: 10vw;
+			margin: 1vw;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		#a .element, #b .element{
+			width: 10.5vw;
+		}
+
+		button{
+			padding: 16px;
+			background-color:aqua;
+			border: none;
+			border-radius: 24px;
+			margin: 1vw;
+		}
+		a {
+			text-decoration: none;
+		}
+		input {
+			width: 40px;
+		}
+	</style>
+	<script>
+		const init = () => {
+			console.log("init");
+			
+			document.querySelectorAll(".element").forEach(
+				e => e.addEventListener("dragstart",dragstart)
+			);
+			
+			document.querySelector("#a").addEventListener("dragover", allowDrop);
+			document.querySelector("#a").addEventListener("drop", drop);
+			
+			document.querySelector("#b").addEventListener("dragover", allowDrop);
+			document.querySelector("#b").addEventListener("drop", drop);
+			
+		}
+		
+		const dragstart = (e) => {
+			// speichert die id des aufgenommenen Elements im Element
+			e.dataTransfer.setData("id",  e.target.id);
+		}
+		const allowDrop = (e) => {
+			// löscht alle voreingestellten Funktionen für das Element
+			e.preventDefault();
+		}
+		const drop = (e) => {
+			// verschiebt das aufgenommene Element in das Ziel-Element
+			e.preventDefault();
+			const data = e.dataTransfer.getData("id");
+			e.target.appendChild(document.getElementById(data));
+			
+		}
+		
+		document.addEventListener("DOMContentLoaded",init);
+	</script>
+</head>
+
+<body>
+	<h1>Warenkorb</h1>
+	<h2>Merkzettel</h2>
+	<section id="bereiche">
+		<div id="a"></div>
+		<div id="b"></div>
+	</section>
+	<section id="elemente">
+		<div id="Tomate" 
+			 class="element b" 
+			 draggable = "true" 
+			 style="background-image: url('Gemüse/Tomate.png')">
+			<input type="number">
+		</div>
+		<div id="Banane" 
+			 class="element a" 
+			 draggable = "true" 
+			 style="background-image: url('Gemüse/Banane.png')">
+			<input type="number">
+		</div>
+		<div id="Gurke" 
+			 class="element a" 
+			 draggable = "true" 
+			 style="background-image: url('Gemüse/Gurke.png')">
+			<input type="number">
+		</div>
+		<div id="Aubergine" 
+			 class="element a" 
+			 draggable = "true" 
+			 style="background-image: url('Gemüse/Aubergine.png')">
+			<input type="number">
+		</div>
+		<div id="Apfel" 
+			 class="element a" 
+			 draggable = "true" 
+			 style="background-image: url(Gemüse/Apfel.png)">
+			<input type="number">
+		</div>
+
+
+	</section>
+	
+	<button><a href="Bestellung.html">Bestellen</a></button>
+</body>
+</html>

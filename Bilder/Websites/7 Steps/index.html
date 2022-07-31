@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>scroll</title>
+</head>
+<style>
+	html {
+		scroll-behavior: smooth;
+	}
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	ul li {
+		display: inline;
+		margin: 0 80px 0 0;
+		list-style-type: none;
+	}
+	nav ul li a {
+		padding: 8px;
+		margin: 20px 0 10px 0;
+		border: 1px rgba(48,48,48,0.75) solid;
+		background:rgba(48,48,48,0.75);
+		border-radius: 20px;
+		text-decoration: none;
+		color: white;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	}
+	nav.sticky{	
+		z-index: auto;
+  		position: fixed;
+	}
+	section.monkeys {
+		display: flex;
+		justify-content: center;
+		height: 60vh;
+	}
+	img {
+		height: 50vh;
+	}
+	a:hover {
+		
+	}
+	section{
+		 background: rgba(48,48,48,1);
+		 min-height: 100vh;
+		 display: flex;
+		 justify-content:center;
+		 align-content: flex-end;
+		 align-items:center;
+		 flex-wrap:wrap;
+	}
+	ol{
+		list-style-position: inside;
+		padding:0;
+		display: flex;
+		justify-content:center;
+		background:#FFF;
+		width:100%;	
+		margin-top:24vw;
+	}
+	li.StepsBorder{
+		position: relative;
+		width: 60px;
+        height: 40px;
+		border: 1px solid black;
+		margin: 16px 8px;
+        text-align: center;
+		padding: 20px 0 0 3px;
+		
+	}
+	label.step{
+		position: absolute;
+		top:0;
+		left:-1px;
+		display:block;
+		height: 60px;
+		padding: 20px 0px 5px 80px;
+		transform: rotate(-90deg);
+		transform-origin: 200px 200px;
+		width: 40vh;
+		text-align: left;
+		font-size: 18px;
+		font-weight: bold;
+		opacity: 0;
+		color: white;
+		transition: opacity 4s, transform-origin 0.5s 0.1s;
+		
+	}
+	li.StepsBorder:hover{
+		background-color: #C1272D;
+		cursor: pointer;
+	}
+	li.StepsBorder:hover label{
+		color: white;
+	}
+	dl{
+		color: white;
+		display:none;
+		padding:16px;
+		position:absolute;
+		left: 0;
+		margin-top: 94px;
+		width: 100%;
+		height: 30vh;
+		z-index: 1;
+		background: rgba(48,48,48,1);
+    }
+	dt{
+		margin: 30px auto 24px auto;
+		width:516px;
+		font-size: 24px;
+		text-align: center;
+	}
+	dd{
+		margin: auto;
+		width: 516px;
+		font-size: 16px;
+		text-align: center;
+	}
+	input[type="radio"]{
+		display:none;
+	}
+	input:checked + li + dl{
+		display: block;
+	}
+	input:checked + li{
+		background-color: #C1272D;
+	}
+	input:checked + li label{
+		transform-origin: 30px 30px;
+		opacity: 1;
+		color: white;
+	}
+	label[for="contactform"]{
+		background:#C1272D;
+		padding: 16px 32px;
+		border-radius: 32px;
+		margin: 250px;
+	}
+	#btn{
+		z-index: 1;
+	}
+
+</style>
+
+<body>
+	<nav class="sticky">
+		<ul>
+			<li><a href="index.html#steps">Steps</a></li>
+			<li><a href="index.html#Monke2">Monke2</a></li>
+			<li><a href="index.html#Monke3">Monke3</a></li>
+		</ul>
+	</nav>
+	<section id="steps">
+    	<ol>
+        	<input class="test" type="radio" id="step1" name="steps" checked>
+        	<li class="StepsBorder">
+            	<label class="step" for="step1">Kontaktaufnahme</label>
+            </li>
+            <dl>
+				<dt>1. Kontaktaufnahme</dt>
+				<dd>
+					Vereinbaren Sie Telefonisch über 030-1234567<br>
+					oder per Mail an Service@meinedomain.de<br>
+					einen Termin für ein Beratungsgespräch
+				</dd>
+			</dl>
+            <input class="test" type="radio" id="step2" name="steps">
+            <li class="StepsBorder">
+            	<label class="step" for="step2">Beratungsgespräch</label>
+            </li>
+            <dl>
+				<dt>2. Beratungsgespräch</dt>
+				<dd>Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. <br>Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+				</dd>
+			</dl>
+            <input class="test" type="radio" id="step3" name="steps">
+            <li class="StepsBorder">
+            	<label class="step" for="step3">Gestaltung Ihrer Website</label>
+            </li>
+            <dl>
+				<dt>3. Gestaltung Ihrer Website</dt>
+				<dd>
+					Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim.
+				</dd>
+			</dl>
+            <input class="test" type="radio" id="step4" name="steps">
+            <li class="StepsBorder">
+            	<label class="step" for="step4">Hosting, Installation und Konfiguration</label>
+            </li>
+            <dl>
+				<dt>4. Hosting, Installation und Konfiguration</dt>
+				<dd>
+					Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. "Fix, Schwyz!" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.
+				</dd>
+			</dl>
+            <input class="test" type="radio" id="step5" name="steps">
+            <li class="StepsBorder">
+            	<label class="step" for="step5">Schulung Ihrer Mitarbeiter</label>
+            </li>
+            <dl>
+				<dt>5. Schulung Ihrer Mitarbeiter</dt>
+				<dd>
+					Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt.
+				</dd>
+			</dl>
+            <input class="test" type="radio" id="step6" name="steps">
+            <li class="StepsBorder">
+            	<label class="step" for="step6">Eingabe / Übertragung der Inhalte</label>
+            </li>
+            <dl>
+				<dt>6.Eingabe / Übertragung der Inhalte</dt>
+				<dd>
+					Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim.
+				</dd>
+			</dl>
+            <input class="test" type="radio" id="step7" name="steps">
+            <li class="StepsBorder">
+            	<label class="step" for="step7">Veröffentlichung der Website</label>
+            </li>
+            <dl>
+				<dt>7. Veröffentlichung der Website</dt>
+				<dd>
+					Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. "Fix, Schwyz!" quäkt Jürgen blöd vom Paß. 
+				</dd>
+			</dl>
+        </ol>
+        <label id="btn" for="contactform">Machen Sie jetzt den ersten Schritt</label>
+    </section>
+	<section class="monkeys" id="Monke2"><img src="Bilder/monkey-cool.gif"></section>
+	<section class="monkeys" id="Monke3"><img src="Bilder/monkey-work.gif"></section>
+</body>
+</html>

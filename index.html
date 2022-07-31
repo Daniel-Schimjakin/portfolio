@@ -11,7 +11,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="swiper-bundle.min.css" rel="stylesheet" type="text/css">
 	<style>
 		
 		
@@ -38,35 +37,86 @@
 		<div class="home-text">
 			<h5>Hallo, ich bin</h5>
 			<h1>Daniel Schimjakin</h1>
-			<h6>Ich bin ein <span>Mediengestalter </span>in Digital und Print</h6>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+			<h6>Ein angehender <span>Mediengestalter </span>in Digital und Print</h6>
+			<p>Willkommen auf meinem Portfolio. Hier finden Sie alle wichtigen Informationen zu mir und meinen Arbeiten.</p>
 			<a href="#" class="btn">Lebenslauf</a>
 		</div>
 		
 		<div class="home-img">
-			<p>Bild von mir</p>
+			<img src="Bilder/2022-07-15-14-50-09_Moment.png" style="width: 5000px">
 		</div>
 	</section>
 	
 	<!-----start about----->
 	<section class="about" id="about">
 		<div class="about-img">
-			<img src="../Portfolio/Logos/rgs.logo.daniel.schimjakin.jpg">
+			<img src="Bilder/Unbenannt-1.png">
 		</div>
 		
-		<div class="about-text">
-			<h3>Über Mich</h3>
-			<h2>Lorem ipsum dolor sit amet, consectetur</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-			<div class="count">
-				<a href="#"><span>5</span> Erfolgreiche Projekte</a>
-			</div>
+		<section class="skills section" id="skills">
+			<h2 class="section_title"><span>Skills</span></h2>
 			
-			<div class="main-btn">
-				<a href="#" class="btn">Kontakt</a>
-				<a href="#" class="btn">Anschreiben</a>
+			<div class="skills_container container_grid">
+				<div>
+					<div class="skills_content">
+
+						
+						<div class="skills_list grid">
+							<div class="skills_data">
+								<div class="skills_titles">
+									<h3 class="skills_name">HTML</h3>
+									<span class="skills_number">80%</span>
+								</div>
+								<div class="skills_bar">
+									<span class="skills_percantage skills_html"></span>
+								</div>
+							</div>
+							
+							<div class="skills_data">
+								<div class="skills_titles">
+									<h3 class="skills_name">CSS</h3>
+									<span class="skills_number">70%</span>
+								</div>
+								<div class="skills_bar">
+									<span class="skills_percantage skills_css"></span>
+								</div>
+							</div>
+							
+							<div class="skills_data">
+								<div class="skills_titles">
+									<h3 class="skills_name">JavaScript</h3>
+									<span class="skills_number">20%</span>
+								</div>
+								<div class="skills_bar">
+									<span class="skills_percantage skills_js"></span>
+								</div>
+							</div>
+							
+							<div class="skills_data">
+								<div class="skills_titles">
+									<h3 class="skills_name">Illustrator</h3>
+									<span class="skills_number">70%</span>
+								</div>
+								<div class="skills_bar">
+									<span class="skills_percantage skills_il"></span>
+								</div>
+							</div>
+							
+							<div class="skills_data">
+								<div class="skills_titles">
+									<h3 class="skills_name">Photoshop</h3>
+									<span class="skills_number">70%</span>
+								</div>
+								<div class="skills_bar">
+									<span class="skills_percantage skills_ph"></span>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
 			</div>
-		</div>
+		</section>
 	</section>
 	
 	<!-----start about----->
@@ -78,60 +128,184 @@
 		<div class="service-content">
 			
 			<div class="row">
-				<img id="myBtn" class="icon" src="Bilder/Tree.jpg">
 				<h3>Web Development</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+				<img class="icon preview" src="Bilder/Videoverleih.png">
+				<img class="icon preview" src="Bilder/7steps.png">
+				<img class="icon preview" src="Bilder/Katalog.png">
+				<img class="icon preview" src="Bilder/dragNdrop.png">
+				<p>Diese Webseiten sind im Rahmen der Ausbildung in verschieden Projekten entstanden.</p>
 				
 				<div id="myModal" class="modal">
 					<div class="modal-content">
-						<div class="mySwiper">
-							<div class="swiper-wrapper">
-								<div class="main-slider-box">
-									<div class="main-slider-img">
-										<img id="pls" src="Bilder/Tree.jpg">
-										<div class="slider-btns">
-											<div class="swiper-button-prev"></div>
-											<div class="swiper-button-next"></div>
-										</div>
-									</div>
-								</div>
+						<span id="closing" class="closing">close</span>
+						<div class="img-slider web">
+							<div class="slide active">
+								<a href="Bilder/Websites/Datenbank/index.html"><img class="previewclose" src="Bilder/Videoverleih.png"></a>
+								<p>Die Webseite ist auf einer Vorlage entstanden. Diese habe ich dann, mit einer Datenbank und php dynamisch gemacht habe</p>
+							</div>
+							<div class="slide">
+								<a href="Bilder/Websites/7 Steps/index.html"><img class="previewclose" src="Bilder/7steps.png"></a>
+							</div>
+							<div class="slide">
+								<a href="Bilder/Websites/Katalog/flexbox01.html"><img class="previewclose" src="Bilder/Katalog.png"></a>
+							</div>
+							<div class="slide">
+								<a href="Bilder/Websites/Drag n Drop/DragnDrop.html"><img class="previewclose" src="Bilder/dragNdrop.png"></a>
+							</div>
+							
+							<div class="navigation">
+								<div class="btnn active"></div>
+								<div class="btnn"></div>
+								<div class="btnn"></div>
+								<div class="btnn"></div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		
+			<div class="row">
+				<h3>Animations</h3>
+				<img class="icon preview2" src="Bilder/katana.gif">
+				<img class="icon preview2" src="Bilder/Fahrrad.gif">
+				<p>Animationen etwickelt in Adobe After Effects</p>
+				
+				<div id="myModal2" class="modal2">
+					<div class="modal-content">
+						<span id="closing2" class="closing">close</span>
+						<div class="img-slider web">
+							<div class="slide active">
+								<img  id="kat1" class="previewclose" src="Bilder/katana.jpg">
+								<img id="kat2" class="previewclose" src="Bilder/katana.gif">
+							</div>
+							<div class="slide">
+								<img class="previewclose" src="Bilder/Fahrrad.gif">
+							</div>
+							
+							<div class="navigation">
+								<div class="btnn active"></div>
+								<div class="btnn"></div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<h3>Illustrations</h3>
+				<img class="icon preview3" src="Bilder/A3-Blatt1024_1.jpg">
+				<img class="icon preview3" src="Bilder/Stempel_Daniel_Schimjakin.jpg">
+				<img class="icon preview3" src="Bilder/Tomaten.jpg">
+				<img class="icon preview3" src="Bilder/Tree.jpg">
+				<p>Selbst entwickelte Logos und Illustrationen in Adobe Illustrator</p>
+				
+				<div id="myModal3" class="modal3">
+					<div class="modal-content">
+						<span id="closing3" class="closing">close</span>
+						<div class="img-slider web">
+							<div class="slide active">
+								<img id="a3" class="previewclose" src="Bilder/A3-Blatt1024_1.jpg">
+							</div>
+							<div class="slide">
+								<img id="stempel" class="previewclose" src="Bilder/Stempel_Daniel_Schimjakin.jpg">
+							</div>
+							<div class="slide">
+								<img id="tomaten" class="previewclose" src="Bilder/Tomaten.jpg">
+							</div>
+							<div class="slide">
+								<img id="tree" class="previewclose" src="Bilder/Tree.jpg">
+							</div>
+							
+							<div class="navigation">
+								<div class="btnn active"></div>
+								<div class="btnn"></div>
+								<div class="btnn"></div>
+								<div class="btnn"></div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<h3>Typographic Work</h3>
+				<img class="icon preview4" src="Bilder/Broschure1.jpg">
+				<img class="icon preview4" src="Bilder/Broschure2.jpg">
+				<img class="icon preview4" src="Bilder/transport1.jpg">
+				<img class="icon preview4" src="Bilder/transport2.jpg">
+				<p>Typografische Arbeiten erstellt in Adobe InDesign </p>
+				
+				<div id="myModal4" class="modal4">
+					<div class="modal-content">
+						<span id="closing4" class="closing">close</span>
+						<div class="img-slider web">
+							<div class="slide active">
+								<img id="br1" class="previewclose" src="Bilder/Broschure1.jpg">
+								<img id="br2" class="previewclose" src="Bilder/Broschure2.jpg">
+							</div>
+							<div class="slide transport">
+								<img id="transport1" src="Bilder/transport1.jpg">
+								<img id="transport2" src="Bilder/transport2.jpg">
+							</div>
+							
+							<div class="navigation">
+								<div class="btnn active"></div>
+								<div class="btnn"></div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<h3>Prdoukt-Entwicklung</h3>
+				<img class="icon preview5" src="Bilder/Teeverpackungen.jpg">
+				<p>Teeverpackung selbst entwickelt und gestaltet im Rahmen eines Schulprojektes</p>
+				
+				<div id="myModal5" class="modal5">
+					<div class="modal-content">
+						<span id="closing5" class="closing">close</span>
+						<div class="img-slider web">
+							<div class="slide active">
+								<img id="" src="Bilder/Teeverpackungen.jpg">
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+			
+			<div class="row">
+				<h3>Video</h3>
+				<img class="icon preview6" src="Bilder/truecrimes.png">
+				<p>In Adobe After Effects erstelltes Intro-Video.</p>
 				
-			</div>
-		
-		
-			<div class="row">
-				<i class="bx bx-cast"></i>
-				<h3>Logo Design</h3>
-				<p>Elit, sed do eiusmod tempor et dolore magna aliqua</p>
-			</div>
-
-			<div class="row">
-				<i class="bx bx-cast"></i>
-				<h3>Animationen</h3>
-				<p>Dolore magna aliqua</p>
-			</div>
-
-			<div class="row">
-				<i class="bx bx-cast"></i>
-				<h3>Illustrationen</h3>
-				<p>Incididunt ut labore et dolore magna aliqua</p>
-			</div>
-
-			<div class="row">
-				<i class="bx bx-camera" ></i>
-				<h3>Prdoukt-Entwicklung</h3>
-				<p>Tempor incididunt ut labore et dolore magna aliqua</p>
+				<div id="myModal6" class="modal6">
+					<div class="modal-content">
+						<span id="closing6" class="closing">close</span>
+						<div class="img-slider web">
+							<div class="slide active">
+								<video controls>
+									<source src="Bilder/TrueCrimes.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="slide">
+								<video controls>
+									<source src="Bilder/SlomoTuscheWasser02.mp4" type="video/mp4">
+								</video>
+							</div>
+							
+							<div class="navigation">
+								<div id="bug" class="btnn active"></div>
+								<div id="bug2" class="btnn"></div>
+								<div class="btnn"></div>
+						  </div>
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<div class="row">
-				<i class="bx bx-line-chart" ></i>
-				<h3>Typografische Arbeiten</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-			</div>
+
 		</div>
 	</section>
 	
@@ -139,60 +313,43 @@
 	
 	<section class="resume" id="resume">
 		<div class="center">
-			<h3>Education u. Experience</h3>
+			<h3>Kontakt</h3>
+			<p><span>Adresse:</span> Schmidstraße 6a, Berlin 10179</p>
+			<p><span>Email:</span> s_daniel_s@web.de</p>
+			<p><span>Telefon:</span> 0176-296-561-63</p>
+			
 		</div>
 		
 		<div class="resume-content">
 			<div class="center">
-				<h6>March 2013 - Present</h6>
-				<h4>March 2013 - Present</h4>
-				<p>Lorem ipsun Tempor incididunt ut labore et dolore magna aliqua</p>
-				<h5>University</h5>
 			</div>
 		</div>
 	</section>
-	<div class="slider-btns">
-											<div class="swiper-button-prev"></div>
-											<div class="swiper-button-next"></div>
-										</div>
-			
-
 	<script type="text/javascript" src="js/script.js"></script>
-	<script src="js/swiper-bundle.min.js"></script>
-	<script>
-		var swiper = new Swiper(".mySwiper", {
-			slidesPerView: 1,
-		  	spaceBetween: 50,
-			
-			pagination: {
-				el: ".swiper-pagination",
-          		clickable: true,
-			},
-		  	autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			},
-			navigation: {
-          		nextEl: ".swiper-button-next",
-          		prevEl: ".swiper-button-prev",
-        	},
-		  	
-			breakpoints: {
-          		640: {
-          			slidesPerView: 2,
-          			spaceBetween: 20,
-        		},
-			
-				768: {
-            		slidesPerView: 2,
-            		spaceBetween: 40,
-          		},
-          
-				1024: {
-            		slidesPerView: 3,
-            		spaceBetween: 50,
-          		},
-        	},
+	<script type="text/javascript">
+		var slides = document.querySelectorAll('.slide');
+		var btns = document.querySelectorAll('.btnn');
+		let currentSlide = 1;
+
+		// Javascript for image slider manual navigation
+		var manualNav = function(manual){
+		  slides.forEach((slide) => {
+			slide.classList.remove('active');
+
+			btns.forEach((btnn) => {
+			  btnn.classList.remove('active');
+			});
+		  });
+
+		  slides[manual].classList.add('active');
+		  btns[manual].classList.add('active');
+		}
+
+		btns.forEach((btnn, i) => {
+		  btnn.addEventListener("click", () => {
+			manualNav(i);
+			currentSlide = i;
+		  });
 		});
 	</script>
 </body>

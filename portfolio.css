@@ -570,17 +570,17 @@ div #bug2 {
 }
 
 .skills_html{
-	width: 80%;
+	width: 100%;
 }
 .skills_css{
-	width: 70%;
+	width: 100%;
 }
 .skills_js{
-	width: 30%;
+	width: 50%;
 }
 .skills_il{
-	width: 70%;
+	width: 80%;
 }
 .skills_ph{
-	width: 70%;
+	width: 80%;
 }

@@ -101,8 +101,8 @@ section{
 }
 
 .home-img img{
-	max-width: 85%;
-	height: 700px;
+	max-width: 100%;
+	height: 800px;
 }
 
 .home-text h5{
